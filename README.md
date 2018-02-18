@@ -3,15 +3,17 @@
 Unity の ParticleSystem 上で「射線軸から見ても破綻しないビーム」を実装した 2017.3 用のプロジェクトです。
 動作デモを [unityroom](https://unityroom.com/games/particlesystembeamshaderdemo) で公開中です。
 
+青いビームは ParticleSystem 内蔵の Streched Billboard、黄色いビームが今回の方法で描画しています。
 ![サンプル画像](images/Sample.png)
 
 描画方法の基本的なアイデアは Unite 2016 Tokyo の安原氏の講演「ハードウェア性能を引き出して60fpsを
 実現するプログラミング・テクニック([PDF](http://japan.unity3d.com/unite/unite2016/files/DAY1_1700_room1_Yasuhara.pdf), [YouTube](https://youtu.be/VNVDtUT_4rs))」で
 公開されたゲーム「[Another Thread](https://github.com/unity3d-jp/AnotherThread)」の「楕円シェーダー」に基づくものです。
 
-github ソースコード内の
-- AnotherThread/Assets/Scripts/Beam.cs 
-- AnotherThread/Assets/Shaders/beam.shader 
+[github](https://github.com/unity3d-jp/AnotherThread) ソースコード内の
+- [AnotherThread/Assets/Scripts/Beam.cs](https://github.com/unity3d-jp/AnotherThread/blob/master/Assets/Shaders/beam.shader)
+- [AnotherThread/Assets/Shaders/beam.shader](https://github.com/unity3d-jp/AnotherThread/blob/master/Assets/Scripts/Beam.cs)
+
 の 2 つのファイルが楕円シェーダー関係のソースになります。
 
 ## プロジェクトの使い方
